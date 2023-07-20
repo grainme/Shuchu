@@ -1,0 +1,159 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Clash Display", sans-serif;
+  color: rgb(161, 161, 161);
+  width: 300px;
+  height: 19px;
+  padding: 1rem;
+  margin-right: 0.6rem;
+}
+
+.task-container {
+  margin: 5rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.task-done {
+  color: green;
+}
+
+.task-deleted {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.second {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set container height to full viewport height */
+}
+
+body {
+  background-color: #151515;
+  font-family: "Clash Display", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set container height to full viewport height */
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 750px;
+  border-radius: 12px;
+  background-color: rgb(33, 33, 33);
+}
+
+#headBox {
+  padding-left: 35px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  height: 20%;
+  color: aliceblue;
+  gap: 80px;
+  /* background-color: aqua; */
+}
+
+#clockBox {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 62%;
+  color: aliceblue;
+  /* background-color: antiquewhite; */
+}
+
+#clockBox > h1 {
+  font-size: 100px;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+button,
+button:focus {
+  background-color: transparent;
+  width: 110px;
+  height: 50px;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Clash Display", sans-serif;
+  color: rgb(161, 161, 161);
+  margin: 0.2rem;
+}
+
+button:hover {
+  color: rgb(216, 216, 216) !important;
+}
+
+footer {
+  background-color: #e8e8e8;
+  padding: 20px;
+  text-align: center;
+}
+
+#menu {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#menu ul li {
+  margin: 0 10px;
+}
+
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
