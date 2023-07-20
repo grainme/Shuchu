@@ -1,5 +1,6 @@
-# Shūchū - Minimalist Pomodoro App
+# Shūchū - Minimalist Pomodoro App 
 
+<h5>ONLY AVAILABLE FOR BIG SCREENS; NOT COMPATIBLE WITH PHONES.</h5>
 Welcome to Shūchū / 集中 - a stylish and minimalist pomodoro app designed to boost your productivity and focus. This web app is built using HTML, CSS, and JavaScript, providing a seamless and distraction-free experience.
 
 ## Features
@@ -11,7 +12,7 @@ Welcome to Shūchū / 集中 - a stylish and minimalist pomodoro app designed to
 
 ## How to Use
 
-1. Access the web app [here](link_to_app).
+1. Access the web app [here](https://shuchu.vercel.app).
 2. Set your preferred work and break durations.
 3. Click the start button to begin the timer.
 4. Stay focused during the work sessions and enjoy rejuvenating breaks.
@@ -19,7 +20,7 @@ Welcome to Shūchū / 集中 - a stylish and minimalist pomodoro app designed to
 
 ## Preview
 
-![App Preview](link_to_app_preview.gif)
+![App Preview](https://github.com/MarouaneBouf/Shuchu/assets/104838272/c3ec64f0-d91c-48ab-a190-a67817db015c)
 
 ## Installation
 
