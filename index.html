@@ -2,23 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/Logo_Trans.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="... your unique integrity code ..."
-      crossorigin="anonymous"
-    />
-    <script src="./script/script.js"></script>
     <link
       href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap"
       rel="stylesheet"
@@ -26,47 +10,7 @@
     <title>Shūchū 99%</title>
   </head>
   <body>
-    <div class="top">
-      <div id="menu">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="https://github.com/Shuchu">Github</a></li>
-          <li><a href="#">Developer</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <div id="headBox">
-          <h1>Shūchū</h1>
-          <p style="color: rgb(144, 144, 144)">
-            Get things done quickly with the help of Shūchū!
-          </p>
-        </div>
-        <hr />
-        <div id="clockBox">
-          <h1 id="timer">25:00</h1>
-          <div id="btns">
-            <button id="stopButton">Stop</button>
-            <button id="startButton">Start</button>
-            <button id="resumeButton">Resume</button>
-          </div>
-        </div>
-        <div class="task-container">
-          <div id="taskList"></div>
-          <form id="taskForm">
-            <input
-              type="text"
-              id="taskInput"
-              placeholder="Enter a task"
-              autocomplete="off"
-            />
-            <button type="submit">Submit</button>
-            <button type="button" id="resetButton">Reset</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
