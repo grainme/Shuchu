@@ -1,14 +1,17 @@
-import { Footer } from "./mainParts/Footer";
-import { NavBar } from "./mainParts/NavBar";
-import { Body } from "./mainParts/body";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="flex flex-col justify-between items-center min-h-[100vh] bg-[#000000]">
-      <NavBar />
-      <Body />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 
