@@ -20,8 +20,6 @@ export function Settings() {
   const [TimerValue, setTimerValue] = useState<string>("");
   const dispatch = useDispatch();
 
-  const colorOptions = ["red-500", "black", "blue-700", "green-700", "white"];
-
   const handleColorClick = (color: string) => {
     setSelectedColor(color);
     setBackgroundImage(null);
@@ -29,7 +27,7 @@ export function Settings() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
-    setBackgroundImage(file);
+    setBackgroundImage(file ?? null);
     setSelectedColor("");
   };
 
@@ -78,13 +76,22 @@ export function Settings() {
             </Label>
             <div className="col-span-3">
               <div className="flex space-x-4">
-                {colorOptions.map((color) => (
-                  <div
-                    key={color}
-                    className={`w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-${color}`}
-                    onClick={() => handleColorClick(color)}
-                  ></div>
-                ))}
+                <div
+                  onClick={() => handleColorClick("red-500")}
+                  className="w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-red-500"
+                ></div>
+                <div
+                  onClick={() => handleColorClick("blue-500")}
+                  className="w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-blue-500"
+                ></div>
+                <div
+                  onClick={() => handleColorClick("green-500")}
+                  className="w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-green-500"
+                ></div>
+                <div
+                  onClick={() => handleColorClick("black")}
+                  className="w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-black"
+                ></div>
               </div>
             </div>
           </div>
