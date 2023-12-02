@@ -29,7 +29,7 @@ export function Settings() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
-    setBackgroundImage(file);
+    setBackgroundImage(file ?? null);
     setSelectedColor("");
   };
 
