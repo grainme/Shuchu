@@ -24,13 +24,13 @@ export function Settings() {
 
   const handleColorClick = (color: string) => {
     setSelectedColor(color);
-    setBackgroundImage(null); // Reset background image when color is selected
+    setBackgroundImage(null);
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     setBackgroundImage(file);
-    setSelectedColor(""); // Reset selected color when background image is uploaded
+    setSelectedColor("");
   };
 
   const handleTimeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -81,9 +81,7 @@ export function Settings() {
                 {colorOptions.map((color) => (
                   <div
                     key={color}
-                    className={`w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-${color} ${
-                      selectedColor === color ? "border-blue-500" : ""
-                    }`}
+                    className={`w-8 h-8 cursor-pointer rounded-full border-b-2 shadow-sm bg-${color}`}
                     onClick={() => handleColorClick(color)}
                   ></div>
                 ))}
