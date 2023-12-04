@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         CD: ["Clash Display", "sans-serif"],
+        GN: ["General Sans", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
