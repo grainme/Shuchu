@@ -1,5 +1,5 @@
-import { Footer } from "@/mainParts/Footer";
 import { NavBar } from "@/mainParts/NavBar";
+import { Card } from "@/mainParts/popper";
 
 function Dev() {
   return (
@@ -13,7 +13,7 @@ function Dev() {
           aka Marouane Boufarouj, CS Student from Morocco!
         </div>
       </div>
-      <Footer />
+      <Card />
     </div>
   );
 }

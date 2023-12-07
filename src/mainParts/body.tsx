@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { Settings } from "./Settings";
 import { useSelector } from "react-redux";
+import { AlertNotif } from "./Alert";
 
 export function Body() {
   const Time = useSelector((state: any) => state.page.value.time);
-  const initialTime = Time !== "" ? parseInt(Time) * 60 : 25 * 60;
+  const initialTime = Time ? Time * 60 : 25 * 60;
   const [time, setTime] = useState<number>(initialTime);
   const [isRunning, setIsRunning] = useState<boolean>(false);
+  const [showAlert, setShowAlert] = useState<boolean>(false);
 
   useEffect(() => {
     setTime(initialTime);
@@ -19,6 +21,8 @@ export function Body() {
       timer = setInterval(() => {
         setTime((prevTime) => prevTime - 1);
       }, 1000);
+    } else if (time === 0) {
+      setShowAlert(true);
     }
 
     return () => {
@@ -46,6 +50,7 @@ export function Body() {
 
   return (
     <div className="font-CD font flex flex-col md:w-[45rem] h-[25rem]  text-white items-center justify-center m-4 overflow-hidden rounded-lg">
+      {showAlert && <AlertNotif />}
       <div className="flex sm:flex-row flex-col justify-between items-center w-full md:mt-2 sm:h-1/3">
         <h1 className="text-[40px] sm:text-[30px] mx-[3rem] md:text-[40px] font-bold max-w-[70%]">
           Shūchū
