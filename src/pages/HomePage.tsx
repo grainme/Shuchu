@@ -1,9 +1,9 @@
-import { Footer } from "../mainParts/Footer";
+import { Footer } from "@/mainParts/Footer";
 import { NavBar } from "../mainParts/NavBar";
 import { Body } from "../mainParts/body";
 import { useSelector } from "react-redux";
 
-function Home() {
+export default function Home() {
   const color = useSelector((state: any) => state.page.value.color);
   const image = useSelector((state: any) => state.page.value.backgroundImage);
 
@@ -28,5 +28,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
