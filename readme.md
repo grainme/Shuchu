@@ -1,7 +1,7 @@
 # Shūchū - Minimalist Pomodoro App 
 
 <h5>ONLY AVAILABLE FOR BIG SCREENS; NOT COMPATIBLE WITH PHONES.</h5>
-Welcome to Shūchū / 集中 - a stylish and minimalist pomodoro app designed to boost your productivity and focus. This web app is built using HTML, CSS, and JavaScript, providing a seamless and distraction-free experience.
+Welcome to Shūchū / 集中 - a stylish and minimalist pomodoro app designed to boost your productivity and focus. This web app is built using React providing a seamless and distraction-free experience.
 
 ## Features
 
