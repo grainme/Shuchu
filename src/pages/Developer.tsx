@@ -9,9 +9,6 @@ function Dev() {
         <h1 className="text-[20px] sm:text-[40px] mb-[-1rem] sm:mb-[-2rem] ">
           Marouane Boufarouj & Ismail Assou
         </h1>
-        <div className="text-[12px] sm:text-[14px] text-gray-300 font-GN">
-          Students from ENSA Khouribga, Morocco!
-        </div>
       </div>
       <Card />
     </div>
