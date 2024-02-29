@@ -7,7 +7,7 @@ function Dev() {
       <NavBar />
       <div className="sm:w-[70%] flex flex-col justify-center items-center">
         <h1 className="text-[20px] sm:text-[40px] mb-[-1rem] sm:mb-[-2rem] ">
-          Marouane Boufarouj & Ismail Assou
+          dev by Marouane Boufarouj
         </h1>
       </div>
       <Card />
