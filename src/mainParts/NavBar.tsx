@@ -7,7 +7,6 @@ export function NavBar() {
       <Link to="/"> Home </Link>
       <Tasks />
       <Link to="/WhoAmI"> Developer </Link>
-      <Link to="/Download"> Download </Link>
     </div>
   );
 }
