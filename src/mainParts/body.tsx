@@ -64,7 +64,7 @@ export function Body() {
       </div>
 
       <div className="flex flex-row flex-wrap w-[80%] justify-center gap-4 sm:flex-col sm:h-1/5 mb-10">
-        <button className="rounded-lg border p-5" onClick={start}>
+        <button name="selenium_test" className="rounded-lg border p-5" onClick={start}>
           START
         </button>
         <button
