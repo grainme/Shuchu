@@ -10,7 +10,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { TaskDiv } from "./TaskDiv";
-import { Button } from "@/components/ui/button";
 import { addTask } from "@/store";
 import { RootState } from "@/store";
 
