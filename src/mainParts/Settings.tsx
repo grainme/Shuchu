@@ -38,7 +38,7 @@ export function Settings() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className="rounded-lg border p-5">SETTINGS</button>
+        <button name="selenium_settings" className="rounded-lg border p-5">SETTINGS</button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
