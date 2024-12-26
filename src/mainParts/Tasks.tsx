@@ -66,12 +66,14 @@ export function Tasks() {
               <input
                 className="flex-1 px-3 py-2 rounded-lg border border-gray-300 focus:outline-none"
                 name="newTask"
+                id="selenium_task"
                 placeholder="Add new task"
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
                 onKeyUp={(e) => e.key === "Enter" && handleAddTask()}
               />
               <Button
+                name="selenium_add_task"
                 className="ml-3 px-4 py-2  text-white focus:outline-none"
                 onClick={handleAddTask}
               >
