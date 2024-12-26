@@ -39,7 +39,7 @@ export function Tasks() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <div className=" cursor-pointer text-slate-200">Tasks</div>
+        <div name="selenium_tasks" className=" cursor-pointer text-slate-200">Tasks</div>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
