@@ -73,7 +73,7 @@ export function Tasks() {
               />
               <button
                 name="selenium_add_task"
-                className="ml-3 px-4 py-2  text-white focus:outline-none"
+                className="ml-3 px-4 py-2 bg-black rounded-lg text-white focus:outline-none"
                 onClick={handleAddTask}
               >
                 Add Task
