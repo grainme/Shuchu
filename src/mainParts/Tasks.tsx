@@ -39,7 +39,7 @@ export function Tasks() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <div name="selenium_tasks" className=" cursor-pointer text-slate-200">Tasks</div>
+        <button name="selenium_tasks" className=" cursor-pointer text-slate-200">Tasks</button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
@@ -72,13 +72,13 @@ export function Tasks() {
                 onChange={(e) => setNewTask(e.target.value)}
                 onKeyUp={(e) => e.key === "Enter" && handleAddTask()}
               />
-              <Button
+              <button
                 name="selenium_add_task"
                 className="ml-3 px-4 py-2  text-white focus:outline-none"
                 onClick={handleAddTask}
               >
                 Add Task
-              </Button>
+              </button>
             </div>
           </div>
         </SheetFooter>
