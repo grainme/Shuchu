@@ -64,16 +64,17 @@ export function Body() {
       </div>
 
       <div className="flex flex-row flex-wrap w-[80%] justify-center gap-4 sm:flex-col sm:h-1/5 mb-10">
-        <button name="selenium_test" className="rounded-lg border p-5" onClick={start}>
+        <button name="selenium_start" className="rounded-lg border p-5" onClick={start}>
           START
         </button>
         <button
+          name="selenium_pause"
           className="rounded-lg border p-5"
           onClick={() => setIsRunning(!isRunning)}
         >
           {isRunning ? "PAUSE" : "RESUME"}
         </button>
-        <button className="rounded-lg border p-5" onClick={reset}>
+        <button name="selenium_reset" className="rounded-lg border p-5" onClick={reset}>
           RESET
         </button>
         <Settings />
